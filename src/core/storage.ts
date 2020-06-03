@@ -239,8 +239,7 @@ export default class Storage {
       document.cookie = serializedCookie
     } else if (process.server && this.ctx.res) {
       // Send Set-Cookie header from server side
-      const prevCookies = this.ctx.res.getHeader('Set-Cookie')
-      this.ctx.res.setHeader('Set-Cookie', [].concat(prevCookies, serializedCookie).filter(v => v))
+      this.ctx.res.setHeader('Set-Cookie', serializedCookie)
     }
 
     return value

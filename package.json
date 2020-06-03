@@ -39,7 +39,7 @@
     "@nuxt/typescript-runtime": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@types/jest": "latest",
-    "@types/node": "latest",
+    "@types/node": "^14.0.9",
     "bootstrap-vue": "latest",
     "cookie-parser": "latest",
     "eslint": "latest",
